@@ -15,7 +15,7 @@ void setup() {
 	// set the maximum speed, acceleration factor,
 	// initial speed and the target position
 	myStepper.setMaxSpeed(1000);
-	myStepper.setAcceleration(500);
+	myStepper.setAcceleration(50);
 	myStepper.setSpeed(1000);
 	myStepper.moveTo(0);
 }
@@ -32,13 +32,14 @@ void runToIncrementedPosition(float increment) {
 
 void loop() {
 	
-	while(myStepper.currentPosition() < 150) {
-		runToIncrementedPosition(30);
-		delay(500);
-	}
+	// while(myStepper.currentPosition() < 150) {
+	// 	runToIncrementedPosition(30);
+	// 	delay(500);
+	// }
 	
-	runToPosition(0);
-	delay(3000);
+	// runToPosition(0);
+	// delay(3000);
+  myStepper.setSpeed(700);
 		
 }
 
