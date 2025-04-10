@@ -3,7 +3,7 @@
 
 // Define pin connections
 const int dirPin = 2;
-const int stepPin = 3;
+const int stepPin = 5;
 
 // Define motor interface type
 #define motorInterfaceType 1
@@ -40,6 +40,7 @@ void loop() {
 	// runToPosition(0);
 	// delay(3000);
   myStepper.setSpeed(700);
+	myStepper.runSpeed();
 		
 }
 
